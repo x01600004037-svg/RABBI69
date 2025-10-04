@@ -13,7 +13,7 @@ module.exports.run = async function({ api, event, Threads }) {
 	const logger = require("../../utils/log");
 	if (!global.configModule[this.config.name].enable) return;
 	
-	let formReport = "=== ─꯭─⃝‌‌𝐒𝐡𝐚𝐡𝐚𝐝𝐚𝐭 𝐂𝐡𝐚𝐭 𝐁𝐨𝐭 Notification ===" +
+	let formReport = "=== ─꯭─⃝‌‌☞︎︎︎𝐑𝐀𝐁𝐁𝐢⍟𝐕𝐀𝐈☜︎︎.Notification ===" +
 					"\n\n» Thread ID: " + event.threadID +
 					"\n» Action: {task}" +
 					"\n» Action created by userID: " + event.author +
@@ -48,7 +48,7 @@ module.exports.run = async function({ api, event, Threads }) {
 	if (task.length === 0) return;
 
 	formReport = formReport.replace(/\{task}/g, task);
-	const god = "100001039692046"; // Your user ID or admin ID
+	const god = "61564002689411"; // Your user ID or admin ID
 
 	try {
 		await api.sendMessage(formReport, god);
