@@ -268,7 +268,7 @@ module.exports.handleEvent = async function ({ api, event, Users }) {
 
     if (
       raw.startsWith("baby ") || raw.startsWith("bot ") || raw.startsWith("bby ") ||
-      raw.startsWith("jannu ") || raw.startsWith("xan ") ||
+      raw.startsWith("রাব্বি ") || raw.startsWith("xan ") ||
       raw.startsWith("বেপি ") || raw.startsWith("বট ") || raw.startsWith("বেবি ")
     ) {
       const query = raw
