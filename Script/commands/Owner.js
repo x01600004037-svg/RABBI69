@@ -1,54 +1,48 @@
 const request = require("request");
 const fs = require("fs-extra");
-
 module.exports.config = {
   name: "owner",
   version: "1.0.1",
   hasPermssion: 0,
-  credits: "SHAHADAT SAHU",
+  credits: "𝐂𝐀𝐏𝐓𝐈𝐍☃︎𝐑𝐀𝐁𝐁𝐈♲︎︎︎𝐕𝐀𝐈",
   description: "Show Owner Info with styled box & random photo",
   commandCategory: "Information",
   usages: "owner",
   cooldowns: 2
 };
-
 module.exports.run = async function ({ api, event }) {
-
   
   const info = `
 ╔═════════════════════ ✿
 ║ ✨ 𝗢𝗪𝗡𝗘𝗥 𝗜𝗡𝗙𝗢 ✨
 ╠═════════════════════ ✿
-║ 👑 𝗡𝗮𝗺𝗲 : 𝗦𝗛𝗔𝗛𝗔𝗗𝗔𝗧 𝗦𝗔𝗛𝗨
-║ 🧸 𝗡𝗶𝗰𝗸 𝗡𝗮𝗺𝗲 : 𝗦𝗔𝗛𝗨
-║ 🎂 𝗔𝗴𝗲 : 𝟭𝟴+
+║ 👑 𝗡𝗮𝗺𝗲 : 𝐂𝐀𝐏𝐓𝐈𝐍☃︎𝐑𝐀𝐁𝐁𝐈♲︎︎︎𝐕𝐀𝐈
+║ 🧸 𝗡𝗶𝗰𝗸 𝗡𝗮𝗺𝗲 : 𝐑𝐀𝐁𝐁𝐈
+║ 🎂 𝗔𝗴𝗲 : 19+
 ║ 💘 𝗥𝗲𝗹𝗮𝘁𝗶𝗼𝗻 : 𝗦𝗶𝗻𝗴𝗹𝗲
-║ 🎓 𝗣𝗿𝗼𝗳𝗲𝘀𝘀𝗶𝗼𝗻 : 𝗦𝘁𝘂𝗱𝗲𝗻𝘁
-║ 📚 𝗘𝗱𝘂𝗰𝗮𝘁𝗶𝗼𝗻 : 𝗛𝗦𝗖
-║ 🏡 𝗔𝗱𝗱𝗿𝗲𝘀𝘀 : 𝗞𝗵𝗮𝗴𝗿𝗮𝗰𝗵𝗮𝗿𝗶
+║ 🎓 𝗣𝗿𝗼𝗳𝗲𝘀𝘀𝗶𝗼𝗻 : 🖕🖕
+║ 📚 𝗘𝗱𝘂𝗰𝗮𝘁𝗶𝗼𝗻 : 🖕🖕
+║ 🏡 𝗔𝗱𝗱𝗿𝗲𝘀𝘀 : kataliya 
 ╠═════════════════════ ✿
 ║ 🔗 𝗖𝗢𝗡𝗧𝗔𝗖𝗧 𝗟𝗜𝗡𝗞𝗦
 ╠═════════════════════ ✿
 ║ 📘 𝗙𝗮𝗰𝗲𝗯𝗼𝗼𝗸 :
-║ fb.com/100001039692046
+║ fb.com/61564002689411
 ║ 💬 𝗠𝗲𝘀𝘀𝗲𝗻𝗴𝗲𝗿 :
-║ m.me/100001039692046
+║ m.me/61564002689411
 ║ 📞 𝗪𝗵𝗮𝘁𝘀𝗔𝗽𝗽 :
-║ wa.me/01882333052
+║ wa.me/01795486467
 ║ ✈️ 𝗧𝗲𝗹𝗲𝗴𝗿𝗮𝗺 :
-║ t.me/yoursahu
+║https://t.me/RKrabbivai
 ╚═════════════════════ ✿
 `;
-
   const images = [
-    "https://i.imgur.com/8WBso8x.png",
-    "https://i.imgur.com/0VZu5eY.png",
-    "https://i.imgur.com/bkixgPK.jpeg",
-    "https://i.imgur.com/z6G6L4c.jpeg"
+    "https://i.imgur.com/ZRQpRGL.jpeg",
+    "https://i.imgur.com/ZRQpRGL.jpeg",
+    "https://i.imgur.com/ZRQpRGL.jpeg",
+    "https://i.imgur.com/ZRQpRGL.jpeg"
   ];
-
   const randomImg = images[Math.floor(Math.random() * images.length)];
-
   const callback = () => api.sendMessage(
     {
       body: info,
@@ -57,7 +51,6 @@ module.exports.run = async function ({ api, event }) {
     event.threadID,
     () => fs.unlinkSync(__dirname + "/cache/owner.jpg")
   );
-
   return request(encodeURI(randomImg))
     .pipe(fs.createWriteStream(__dirname + "/cache/owner.jpg"))
     .on("close", () => callback());
