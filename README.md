@@ -136,15 +136,15 @@ ___
 
 ## 👨‍💻 **ABOUT THE DEVELOPER**  
   
-**Name:** **`SHAHADAT ISLAM`**  
-**Nice Name:** **`SA HU`**  
+**Name:** **`RABBI ISLAM`**  
+**Nice Name:** **`RABBI`**  
 **Profession:** **`STUDENT & CHATBOT DEVELOPER`**  
 **Location:** **`KHAGRACHARI, BANGLADESH`**  
 
 ### 📞 **CONTACT INFORMATION**  
-- **WhatsApp:** **[01882 333052](https://wa.me/+8801882333052)**  
-- **Facebook:** **[Facebook ID](https://facebook.com/100001039692046)**  
-- **Messenger:** **[Message Me](https://m.me/100001039692046)**  
+- **WhatsApp:** **[01795486467](https://wa.me/+8801795486467)**  
+- **Facebook:** **[Facebook ID](https://facebook.com/61564002689411)**  
+- **Messenger:** **[Message Me](http://m.me/61564002689411)**  
 
 ### 🚀 **DEVELOPMENT APPROACH**  
 - 💻 **Copy-paste techniques with customizations**  
