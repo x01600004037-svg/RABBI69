@@ -50,4 +50,4 @@ module.exports.run = async function({ api, event, args }) {
 			return request(encodeURI(`${threadInfo.imageSrc}`))
 				.pipe(fs.createWriteStream(__dirname + '/cache/1.png'))
 				.on('close', () => callback());
-	    }
+}
