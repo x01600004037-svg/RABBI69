@@ -51,7 +51,22 @@ const emojiAudioMap = {
  "❤️": "https://files.catbox.moe/0qgv91.mp3",
  "🥶": "https://files.catbox.moe/rzti55.mp3",
  "👀": "https://files.catbox.moe/wkdo44.mp3",
- "🙏": "https://files.catbox.moe/h8sseq.mp3",
+ "🙏": "https://files.catbox.moe/542hm1.mp3",
+ "🐓": "https://files.catbox.moe/oaxtjv.mp3",
+ "🩴": "https://files.catbox.moe/bhfqtr.mp3",
+ "👑": "https://files.catbox.moe/jr4vnq.mp3",
+ "👙": "https://files.catbox.moe/jp0bqo.mp3",
+ "🍷": "https://files.catbox.moe/oivwsu.mp3",
+ "🪓": "https://files.catbox.moe/rn7gqe.mp3",
+ "🚬": "https://files.catbox.moe/vixb01.mp3",
+ "🍉": "https://files.catbox.moe/x1ze8v.mp3",
+ "🖕": "https://files.catbox.moe/pxgnt9.mp3",
+ "🎲": "https://files.catbox.moe/6ek32y.mp3",
+ "🤱": "https://files.catbox.moe/qc8gsi.mp3",
+ "👔": "https://files.catbox.moe/q8v9ys.mp3",
+ "💵": "https://files.catbox.moe/d42g6z.mp3",
+ "👰": "https://files.catbox.moe/waawu4.mp3",
+
 };
 
 module.exports.handleEvent = async ({ api, event }) => {
